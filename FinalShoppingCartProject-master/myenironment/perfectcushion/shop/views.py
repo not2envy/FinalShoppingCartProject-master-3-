@@ -9,8 +9,8 @@ from django.contrib.auth import login, authenticate, logout
 
 # Create your views here.
 def index(request):
-    text_var = 'this is my first django app web page.'
-    return HttpResponse(text_var)
+    #this is the first page that loads up when server is runnning
+	return render(request, 'shop/category.html')
 
 #Category view
 def allProdCat(request, c_slug=None):
